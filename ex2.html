@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>suteu bogdan</title>
+<button onclick="changeProfile()">Alta viata</button>//schimba profilul
+<button  onClick="window.location.reload();">Inapoi</button>//refresh la pagina
+<script src="Lab07_Testverif.js"></script>
+
+  <style>
+header{
+height: 50px;
+background-color:#f77c48;
+}
+
+body{id="body"
+padding: 10px;
+margin: 1;
+font-family:Times New Roman;
+}
+
+#Inceput{
+margin-left: 15px;
+}
+
+#NumePrenume{
+font-weight: 220;
+}
+
+table,td{
+border:2px solid;
+border-collapse:separate;
+padding: 15px;
+}
+
+#Hobby-uri{
+border-style: dashed double none;
+width:60px;
+}
+
+#Pozaprofil{id="Pozaprofil"
+border-radius:50px;
+padding:40px;
+position:absolute;
+top:80px;
+right:120px;
+opacity:1;
+}
+
+footer{
+background-color:#e00dd2
+}
+
+</style>
+</head>
+<body id="body">
+  <header id="body">
+<h1 id="Inceput">Pagina personala
+</h1>
+</header>
+    <h1 id="NumePrenume" style="Color:#266bbf";">Suteu Bogdan
+                                             </h1>
+                                          
+<img id="Pozaprofil">
+<p id="mail">bogdansuteu689@yahoo.com</p>
+<div id="birthday">
+    <table onmouseover="showMore()" border="1">
+        <tr>  
+            <td>08_06_2003</td>//data nasterii
+        </tr>
+    </table>
+</div>
+<script>
+function showMore(){
+    document.getElementById("birthday").innerHTML = "<table border='1' onmouseout='showLess()'><tr><td>19 ani</td></tr></table>";//cand pui mouse-ul se modifica data nasterii,aratand varsta
+}
+
+function showLess(){
+    document.getElementById("birthday").innerHTML = "<table border='1' onmouseover='showMore()'><tr><td>08_06_2003</td></tr></table>";//cand iei mouse-ul se modifica varsta,aratand data nasterii
+}
+</script>
+<p id="body">Este suficient doar sa incepi ca sa poti castiga</p>
+<h2 id="Educatie">Educatie</h2>
+<table id="tabelEducatie">
+<tbody<tr>
+<td id="realizare_r1">Elemente de robotică</td>
+<td id="perioada_r1">Anul 3,semestrul 1</td>
+<td id="link_r1">https://etti.utcluj.ro//files/Acasa/Site/FiseDisciplina/EaRo/54_20.pdf</td>
+</tr>
+<tr>
+<td id="realizare_r2">Electronica de putere</td>
+<td id="perioada_r2">Anul 3,semestrul 1</td>
+<td id="link_r2">https://etti.utcluj.ro//files/Acasa/Site/FiseDisciplina/EaRo/36.pdf
+</tr>
+<tr>
+<td id="realizare_r3">Inginerie software</td>
+<td id="perioada_r3">Anul 4,semestrul 1</td>
+<td id="link_r3">https://etti.utcluj.ro//files/Acasa/Site/FiseDisciplina/EaRo/29.pdf</td>
+</tr>
+</tbody>
+</table>
+<h2>Hobby-uri</h2>
+<ul id="Hobby-uri">
+<li>Fotbal</li>
+<li>Tenis</li>
+<li>Tenis de picior</li>
+<li>Baschet</li>
+</ul>
+<footer><button  onClick="window.location.reload();">Refresh Page</button>
+</footer>
+</body>
+</html>
